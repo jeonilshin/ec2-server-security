@@ -10,3 +10,9 @@ sudo echo -e "Daeyang1@#\nDaeyang1@#" | sudo passwd ec2-user
 echo 'Port 2220' >> /etc/ssh/sshd_config
 ```
 ``` systemctl restart sshd ```
+# Set AWS Configure
+```
+aws configure set aws_access_key_id [id]
+aws configure set aws_secret_access_key [key]
+aws configure set region [region]
+aws configure set output [language]
